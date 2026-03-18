@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posilka Vozokany</title>
+
+  <style>
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0b0f19;
+      color: #e5e7eb;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #020617;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    header h1 {
+      color: #ef4444;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #9ca3af;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ef4444;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+                  url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #9ca3af;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      background: #ef4444;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #dc2626;
+    }
+
+    .section {
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #020617;
+      padding: 25px;
+      border-radius: 12px;
+      width: 260px;
+      border: 1px solid #1f2937;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #ef4444;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      background: #020617;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Posilka Vozokany 💪</h1>
+  <nav>
+    <a href="#">Domov</a>
+    <a href="#">Tréningy</a>
+    <a href="#">Cenník</a>
+    <a href="#">Kontakt</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Prebud v sebe bujaka</h2>
+  <p>Posilka akú nide nenájdes</p>
+  <button class="btn" onclick="alert('Príď si zacvičiť! 💪')">
+    Začni ešte dnes
+  </button>
+</section>
+
+<section class="section">
+  <h3>Naše služby</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>Silový tréning</h4>
+      <p>Kompletné vybavenie pre silový tréning</p>
+    </div>
+    <div class="card">
+      <h4>Kardio zóna</h4>
+      <p>Pás, bicykel atdc</p>
+    </div>
+    <div class="card">
+      <h4>Osobný tréner Ivulo</h4>
+      <p>Iba pre zeny</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h3>Cenník</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>Jednorazový vstup</h4>
+      <p>2€</p>
+    </div>
+    <div class="card">
+      <h4>Mesacná permanentka</h4>
+      <p>20 €</p>
+    </div>
+    <div class="card">
+      <h4>Tréner</h4>
+      <p>Mladé pekne ženy 0€ / Inak 50€ tréning</p>
+    </div>
+  </div>
+<section class="section">
+
+<section class="section">
+  <h3>Otváracie hodiny</h3>
+
+  <div class="card" style="margin: 0 auto; max-width: 300px;">
+    <h4>Nonostop</h4>
+    <p style="margin-top: 10px; font-size: 1.2rem; color: #ef4444;">
+      24 hodín / 7 dní v týždni
+    </p>
+    <p style="margin-top: 10px; color: #9ca3af;">
+      Otvorené furt
+    </p>
+  </div>
+
+</section>
+  <h3>Kde nás nájdeš</h3>
+
+  <iframe
+    src="https://www.google.com/maps?q=Vozokany%203,%20Topolcany&output=embed"
+    width="100%"
+    height="400"
+    style="border:0; border-radius: 12px;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+
+  <p style="margin-top: 20px; color: #9ca3af;">
+    📍 Vozokany 3, okres Topoľčany
+  </p>
+
+</section>
+<a href="https://www.google.com/maps?q=Vozokany%203,%20Topolcany"
+   target="_blank"
+   class="btn"
+   style="margin-top: 15px; display: inline-block;">
+   Navigovať k nám
+</a>
+<footer>
+  📍 Vozokany | 📞 0900 000 000  
+  <br><br>
+  © 2026 Posilka Vozokany
+</footer>
+<script>
+  const elements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  elements.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
